@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sample Calculatoe</title>
+</head>
+<body>
+<h1>Sample calculator</h1>
+<form>
+	<label>First Number:</label>
+		<input type="number" id="box1"><br/>
+	<label>Second Number:</label>
+		<input type="number" id="box2"><br/>
+	<label>Answer</label>
+		<input type="number" id="+"><br/>
+			<input type="button" value="Calculate" onclick="calcSum()"><br/>
+</form>
+<script>
+function calcSum(){
+	let box1 = document.getElementById("box1").value;
+	let box2 = document.getElementById("box2").value;
+	let sum = Number(box1) + Number(box2);
+	document.getElementById("+").value = sum;
+	}
+</script>
+
+
+
